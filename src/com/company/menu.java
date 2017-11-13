@@ -1,7 +1,10 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class menu {
     public static void main(String[] args){
+        int a;
         System.out.println("Welcome to IS Fastfood!");
         String[] item = new String[5];
         double[] price = new double[5];
@@ -25,6 +28,22 @@ public class menu {
             System.out.print(item[i] +
                     "$" + price[i] + "\n");
         }
+
+        System.out.println("Please enter the number of the food you want: " +
+                "\nPress '0' to checkout." +
+                "\nPress 'q' to quit.");
+
+        Scanner number = new Scanner(System.in);
+            a = number.nextInt();
+            if(a!=0)
+                switch(a){
+                    case 1:
+                        System.out.println("You have selected Fired Chicken Wings.\n" +
+                                "Please enter another number of the food you want: \n" +
+                                "Press '0' to checkout.\n" +
+                                "Press 'q' to quit");
+                        break;
+                }
 
     }
 }
