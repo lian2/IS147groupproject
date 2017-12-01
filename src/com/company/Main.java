@@ -1,9 +1,11 @@
 package com.company;
 
-public class Main {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-	// write your code here
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Please enter the number of the food you want: ");
+        Scanner input = new Scanner(System.in);
 
     }
 }
