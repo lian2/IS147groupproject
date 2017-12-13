@@ -40,24 +40,27 @@ public class Main {
         if(a!=0) switch (a) {
             case 1:
                 System.out.println("You have selected Fried Chicken Wings.");
-                OrderDetail o = new OrderDetail();
+
                 break;
             case 2:
                 System.out.println("You have selected Philly Cheesesteak. ");
-                OrderDetail r = new OrderDetail();
+
                 break;
             case 3:
                 System.out.println("You have selected Cheese Pizza.");
-                OrderDetail d = new OrderDetail();
+
                 break;
             case 4:
                 System.out.println("You have selected Chocolate Cookie.");
-                OrderDetail e = new OrderDetail();
+
                 break;
             case 5:
                 System.out.println("You have selceted Pepsi.");
-                OrderDetail i = new OrderDetail();
+
                 break;
         }
+        OrderDetail order = new OrderDetail();
+        order.setOrder(a);
+        order.printMe();
     }
 }
