@@ -32,6 +32,6 @@ public class menu {
         System.out.println("Please enter the number of the food you want: " +
                 "\nPress '0' to checkout." +
                 "\nPress 'q' to quit.");
-
     }
+
 }
