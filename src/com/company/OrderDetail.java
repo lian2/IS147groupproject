@@ -1,5 +1,6 @@
 package com.company;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class OrderDetail {
@@ -51,7 +52,8 @@ public class OrderDetail {
     }
     public void printMe(){
         totalCost();
-        System.out.println("Name: "+this.name + "\nPhone#: "+this.phoneNumber+ "\nDelivery? "+this.type+"\nTotal order: $"+this.totalCost);
+        DecimalFormat dff = new DecimalFormat(".###");
+        System.out.println("Name: "+this.name + "\nPhone#: "+this.phoneNumber+ "\nDelivery? "+this.type+"\nTotal order: $"+dff.format(this.totalCost));
 
     }
     //declaring variables for methods of cost and total cost of pizza
