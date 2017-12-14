@@ -33,7 +33,7 @@ public class Main {
         //select food
         int a;
         System.out.println("Please enter the number of the food you want: " +
-             "\nOr press any other number to quit.");
+             "\nOr press '0' to quit.\n");
 
         Scanner select = new Scanner(System.in);
         a = select.nextInt();
@@ -54,8 +54,6 @@ public class Main {
                 System.out.println("You have selceted Pepsi.");
                 break;
 
-        }else if(a>5){
-            return;
         }else if(a==0){
             return;
         }
