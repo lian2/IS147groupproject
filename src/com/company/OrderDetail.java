@@ -51,7 +51,7 @@ public class OrderDetail {
     }
     public void printMe(){
         totalCost();
-        System.out.println("Name: "+this.name + "\nphone: "+this.phoneNumber+ "\nDelivery? "+this.type+"\ntotal order: $"+this.totalCost);
+        System.out.println("Name: "+this.name + "\nPhone#: "+this.phoneNumber+ "\nDelivery? "+this.type+"\nTotal order: $"+this.totalCost);
 
     }
     //declaring variables for methods of cost and total cost of pizza

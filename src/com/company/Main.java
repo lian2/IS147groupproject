@@ -33,32 +33,33 @@ public class Main {
         //select food
         int a;
         System.out.println("Please enter the number of the food you want: " +
-             "\nPress '0' to quit.");
+             "\nOr press any other number to quit.");
 
         Scanner select = new Scanner(System.in);
         a = select.nextInt();
         if(a!=0) switch (a) {
             case 1:
                 System.out.println("You have selected Fried Chicken Wings.");
-
                 break;
             case 2:
                 System.out.println("You have selected Philly Cheesesteak. ");
-
                 break;
             case 3:
                 System.out.println("You have selected Cheese Pizza.");
-
                 break;
             case 4:
                 System.out.println("You have selected Chocolate Cookie.");
-
                 break;
             case 5:
                 System.out.println("You have selceted Pepsi.");
-
                 break;
+
+        }else if(a>5){
+            return;
+        }else if(a==0){
+            return;
         }
+
         OrderDetail order = new OrderDetail();
         order.setOrder(a);
         order.printMe();
